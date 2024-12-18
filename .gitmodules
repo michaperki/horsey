@@ -1,6 +1,3 @@
-[submodule "horsey-frontend"]
-	path = horsey-frontend
-	url = git@github.com:michaperki/horsey-frontend-app.git
 [submodule "horsey-contracts"]
 	path = horsey-contracts
 	url = git@github.com:michaperki/horsey-contracts.git
