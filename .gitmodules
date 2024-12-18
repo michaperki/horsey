@@ -4,3 +4,6 @@
 [submodule "horsey-backend"]
 	path = horsey-backend
 	url = git@github.com:michaperki/horsey-backend.git
+[submodule "horsey-frontend-app"]
+	path = horsey-frontend-app
+	url = https://github.com/michaperki/horsey-frontend.git
