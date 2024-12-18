@@ -6,4 +6,4 @@
 	url = git@github.com:michaperki/horsey-backend.git
 [submodule "horsey-frontend-app"]
 	path = frontend
-	url = https://github.com/michaperki/horsey-frontend.git
+	url = https://github.com/michaperki/horsey-frontend-app.git
