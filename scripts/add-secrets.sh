@@ -1,0 +1,31 @@
+
+#!/bin/bash
+
+REPO="michaperki/horsey-backend"
+
+gh secret set PORT --repo $REPO --body "5000"
+gh secret set OAUTH_CLIENT_ID --repo $REPO --body "yourGoogleClientID.apps.googleusercontent.com"
+gh secret set OAUTH_CLIENT_SECRET --repo $REPO --body "yourGoogleClientSecret"
+gh secret set OAUTH_CALLBACK_URL --repo $REPO --body "http://localhost:5000/auth/google/callback"
+gh secret set JWT_SECRET --repo $REPO --body "0x00c8493d5dc71dae55f383ef033ce12b867a69c596571e49e6f29a5fed45d701eb4c3c61e1728a7be1c2649f082ab843ada65b2ddb25915b93f1a33dfc02cfe7"
+gh secret set STRIPE_SECRET_KEY --repo $REPO --body "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
+gh secret set POLYGON_RPC_URL --repo $REPO --body "https://rpc-mainnet.maticvigil.com/"
+gh secret set PRIVATE_KEY --repo $REPO --body "0x4c0883a69102937d6231471b5dbb6204fe512961708279ee9e6a3d1f4d9e3caa"
+gh secret set PROMO_TOKEN_ADDRESS --repo $REPO --body "0xf629227F59B9E19b65eaD968a4FB2b26e47EAB5C"
+gh secret set ADMIN_USERNAME --repo $REPO --body "admin"
+gh secret set ADMIN_PASSWORD --repo $REPO --body "SecurePassw0rd!"
+gh secret set MONGODB_URI --repo $REPO --body "mongodb://localhost:27017/horsey-backend"
+gh secret set GOOGLE_CLIENT_ID_ADMIN --repo $REPO --body "adminGoogleClientID.apps.googleusercontent.com"
+gh secret set GOOGLE_CLIENT_SECRET_ADMIN --repo $REPO --body "adminGoogleClientSecret"
+gh secret set EMAIL_USER --repo $REPO --body "horsey.chess.app@gmail.com"
+gh secret set EMAIL_PASS --repo $REPO --body "YourEmailPasswordHere"
+gh secret set NODE_ENV --repo $REPO --body "development"
+gh secret set MOCK_LICHESS --repo $REPO --body "false"
+gh secret set LICHESS_CLIENT_ID --repo $REPO --body "horseyApp"
+gh secret set LICHESS_CLIENT_SECRET --repo $REPO --body "horseyAppSecret"
+gh secret set LICHESS_REDIRECT_URI --repo $REPO --body "http://localhost:5000/lichess/auth/callback"
+gh secret set LICHESS_SCOPES --repo $REPO --body "read_profile create_challenges"
+gh secret set SESSION_SECRET --repo $REPO --body "your_session_secret"
+gh secret set FRONTEND_URL --repo $REPO --body "http://localhost:3000"
+
+echo "All secrets added successfully."

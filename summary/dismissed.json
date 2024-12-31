@@ -1,0 +1,13 @@
+{
+  "Backend": [
+    ".env.development",
+    ".eslintignore",
+    ".github\\workflows\\backend-ci.yml",
+    ".gitignore",
+    ".prettierignore",
+    ".prettierrc.json",
+    "eslint.config.mjs",
+    "package-lock.json",
+    "package.json"
+  ]
+}
