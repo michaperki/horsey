@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "dev": "node scripts/dev.mjs",
     "validate-summaries": "node scripts/validateSummaries.mjs"
   },
   "dependencies": {

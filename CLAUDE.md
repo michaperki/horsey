@@ -3,8 +3,14 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Build Commands
+- Full stack from repository root: `npm run dev` (starts backend and frontend together)
 - Frontend: `cd frontend && npm run start` (development), `cd frontend && npm run build` (production)
 - Backend: `cd backend && npm run dev` (development), `cd backend && npm run start` (production)
+
+## Project Docs
+- Project-level planning docs live in `docs/`.
+- Living priority and to-do documents live in `docs/priorities/`.
+- Update the active priority document as implementation decisions are made, instead of leaving product direction only in chat history.
 
 ## Test Commands
 - Frontend: `cd frontend && npm run test` (all tests), `cd frontend && npm test -- -t "test name"` (single test)
